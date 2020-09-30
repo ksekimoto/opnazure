@@ -2,6 +2,12 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "diagnosticsStorageAccountName": {
+      "type": "string"
+    },
+    "diagnosticsStorageAccountId": {
+      "type": "string"
+    },
     "virtualMachineSize": {
       "type": "string",
       "defaultValue": "Standard_B2s",
@@ -100,6 +106,12 @@
           "computerName": "[parameters('virtualMachineName')]",
           "adminUsername": "[parameters('adminUsername')]",
           "adminPassword": "[parameters('adminPassword')]"
+        },
+        "diagnosticsProfile": {
+          "bootDiagnostics": {
+              "enabled": true,
+              "storageUri": "[concat('https://', parameters('diagnosticsStorageAccountName'), '.blob.core.windows.net/')]"
+          }
         },
         "hardwareProfile": {
           "vmSize": "[parameters('virtualMachineSize')]"
