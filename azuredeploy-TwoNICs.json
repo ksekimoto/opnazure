@@ -68,7 +68,7 @@
     "subnet1Ref": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('existingVirtualNetworkName'), parameters('existingUntrustedSubnet'))]",
     "subnet2Ref": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('existingVirtualNetworkName'), parameters('existingTrustedSubnet'))]",
     "location": "[resourceGroup().location]",
-    "_artifactsLocation": "https://raw.githubusercontent.com/dmauser/opnazure/master/",
+    "_artifactsLocation": "https://raw.githubusercontent.com/ksekimoto/opnazure/dev/",
     "baseUriAzureCloud": "[variables('_artifactsLocation')]"
   },
   "resources": [
@@ -194,7 +194,7 @@
         "autoUpgradeMinorVersion": false,
         "settings": {
           "fileUris": [
-            "https://raw.githubusercontent.com/dmauser/opnazure/master/scripts/configureopnsense.sh"
+            "https://raw.githubusercontent.com/ksekimoto/opnazure/dev/scripts/configureopnsense.sh"
           ],
           "commandToExecute": "sh configureopnsense.sh"
         }        

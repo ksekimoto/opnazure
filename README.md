@@ -1,9 +1,9 @@
 # OPNsense Firewall on FreeBSD VM
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdmauser%2Fopnazure%2Fmaster%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fksekimoto%2Fopnazure%2Fdev%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fdmauser%2Fopnazure%2Fmaster%2Fazuredeploy.json" target="_blank">
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fksekimoto%2Fopnazure%2Fdev%2Fazuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
@@ -20,7 +20,7 @@ After deployment, you can go to <https://PublicIP>, then input the user and pass
 
 ## Updates
 
-Two new templates have been added to allow create OPNSense on existing VNETs. One using a Single NIC only and a second using Two NICs. Please check this link for more info: <https://github.com/dmauser/opnazure/wiki/OPNsense-on-Azure>
+Two new templates have been added to allow create OPNSense on existing VNETs. One using a Single NIC only and a second using Two NICs. Please check this link for more info: <https://github.com/ksekimoto/opnazure/wiki/OPNsense-on-Azure>
 
 ## Overview
 
@@ -68,6 +68,6 @@ The following improvements will be added soon:
 
 ## Feedback
 
-Please use Github [issues tab](https://github.com/dmauser/opnazure/issues) to provide feedback. 
+Please use Github [issues tab](https://github.com/ksekimoto/opnazure/issues) to provide feedback. 
 
 Thanks!
