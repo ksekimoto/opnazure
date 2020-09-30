@@ -2,12 +2,6 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "diagnosticsStorageAccountName": {
-      "type": "string"
-    },
-    "diagnosticsStorageAccountId": {
-      "type": "string"
-    },
     "virtualMachineSize": {
       "type": "string",
       "defaultValue": "Standard_B2s",
@@ -74,6 +68,9 @@
       "metadata": {
       "description": "Trusted-Subnet Address Space"
         }
+    },
+    "diagnosticsStorageAccountName": {
+      "type": "string"
     }
   },
   "variables": {

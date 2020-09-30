@@ -34,6 +34,9 @@
     },
     "domainNamePrefix": {
       "value": "GEN-UNIQUE"
+    },
+    "diagnosticsStorageAccountName": {
+      "value": "staopensense"
     }
   }
 }
